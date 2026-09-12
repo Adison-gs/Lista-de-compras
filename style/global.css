@@ -34,3 +34,12 @@ a{
 body{
 background-color:#F4F5FB;
 }
+
+.container{
+  width:20.4375rem;
+  margin: auto;
+}
+
+.none{
+  display: none;
+}
