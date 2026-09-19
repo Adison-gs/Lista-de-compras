@@ -36,10 +36,24 @@ background-color:#F4F5FB;
 }
 
 .container{
-  width:20.4375rem;
-  margin: auto;
+  width: 20.4375rem;
+   margin-inline: auto;
 }
 
 .none{
   display: none;
+}
+.disabled{
+  display: none;
+}
+
+@media (width:80rem){
+
+  .none{
+  display:block;
+}
+.container{
+  width: 39.1875rem;
+  margin-inline: auto;
+}
 }

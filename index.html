@@ -18,25 +18,35 @@
 
   <header class="none"><img src="./assets/logo.svg" alt="Logo da quicklist"></header>
 
-
   <main class="container">
-    <section>
-<a href="#"><img src="./assets/icons/voltar.svg" alt=""></a>
-      <h1>Compras da semana</h1>
-    <input type="text">
-    <button>Adicionar item</button>
+
+    <section class="adicionar">
+
+         <a href="#"><img src="./assets/icons/voltar.svg" alt=""></a>
+         <h1>Compras da semana</h1>
+
+      <div class="itens">
+         <input type="text"  placeholder="Adicione um novo item">
+         <button>Adicionar item</button>
+      </div>
 
     </section>
     <section>
       <ul>
-        <li>
+        <li class="list">
           <input type="checkbox">
-          <div class="checkbox-image"></div>
+          <div></div>
           <p>Pão de forma</p>
           <a href="#"><img src="./assets/icons/lixeira.svg" alt="Icone de lixeira"></a>
         </li>
       </ul>
     </section>
+
+    <span class="disabled">
+      <img src="./assets/icons/warning.svg" alt="icone de alerta">
+      <p>O item foi removido da lista</p>
+      <img src="./assets/icons/x.svg" alt="icone de um x">
+    </span>
   </main>
 
 </body>
