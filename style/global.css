@@ -47,7 +47,7 @@ background-color:#F4F5FB;
   display: none;
 }
 
-@media (width:80rem){
+@media (min-width:80rem){
 
   .none{
   display:block;
