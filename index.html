@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <title>Lista de compras</title>
   <link rel="stylesheet" href="./style/index.css">
   <link
@@ -16,39 +15,36 @@
 
 <body>
 
-  <header class="none"><img src="./assets/logo.svg" alt="Logo da quicklist"></header>
+  <form class="container">
+    <header class="disabled"> 
+      <img src="./assets/logo.svg" alt="Logo da quicklist"> 
+    </header>
 
-  <main class="container">
+    <section class="add-item-section"> <a href="#">
+       <img src="./assets/icons/voltar.svg" alt=""> </a>
+      <h1>Compras da semana</h1>
+      <div class="add-item-container"> 
+        <input type="text" placeholder="Adicione um novo item" id="taskInput" required>
 
-    <section class="adicionar">
-
-         <a href="#"><img src="./assets/icons/voltar.svg" alt=""></a>
-         <h1>Compras da semana</h1>
-
-      <div class="itens">
-         <input type="text"  placeholder="Adicione um novo item">
-         <button>Adicionar item</button>
+        <button id="addItemButton">Adicionar item</button>
       </div>
-
     </section>
     <section>
-      <ul>
-        <li class="list">
-          <input type="checkbox">
+      <ul id="taskList">
+        <!-- <li class="task-item"> <input type="checkbox">
           <div></div>
-          <p>Pão de forma</p>
-          <a href="#"><img src="./assets/icons/lixeira.svg" alt="Icone de lixeira"></a>
-        </li>
+          <p>Pão de forma</p> 
+          <button></button>
+        </li> -->
       </ul>
     </section>
 
-    <span class="disabled">
+    <span class="notification disabledNotification ">
       <img src="./assets/icons/warning.svg" alt="icone de alerta">
-      <p>O item foi removido da lista</p>
-      <img src="./assets/icons/x.svg" alt="icone de um x">
+      <p>O item foi removido da lista</p> <button class="close-notification"></button>
     </span>
-  </main>
-
+  </form>
+  <script src="./script.js"></script>
 </body>
 
 </html>
